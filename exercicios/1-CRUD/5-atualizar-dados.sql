@@ -5,3 +5,6 @@
 
 
 -- Atualize a classe salarial 1 para as pessoas cuja coluna id_salario continua NULL. Lembre-se que a classe salarial deve corresponder o id_salario da tabela salario_classe
+UPDATE employees
+SET id_Salario = 1
+WHERE id_salario = null;
