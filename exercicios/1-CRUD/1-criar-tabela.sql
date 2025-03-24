@@ -4,3 +4,5 @@ id INTEGER PRIMARY KEY AUTOINCREMENT,
 nivel TEXT,
 salario INTEGER
 );
+SELECT * 
+FROM salario_classe;
