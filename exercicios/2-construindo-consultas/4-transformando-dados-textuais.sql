@@ -14,3 +14,13 @@
 
 
 -- Na consulta anterior, utilize o símbolo de coringa para construir padrões textuais
+SELECT DISTINCT
+CustomerId as ID,
+LOWER (FirstName) as nome,
+UPPER (LastName) as sobrenome,
+FirstName || ' '|| LastName as nome_completo,
+REPLACE (Address, 'Av.', 'Avenida') as endereco,
+Address as endereco
+FROM customers
+WHERE
+Country LIKE 'Bra%';
